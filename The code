@@ -1,0 +1,19 @@
+# Random generator with self-weighted feedback
+# Copyright (c) 2025 Chirag
+# Use permitted with attribution
+
+
+
+import random
+
+def Random_generator():
+    x = 0
+    n = 5
+    while True:
+        r = random.randint(0, n)
+        if r == 0:
+            break
+        else:
+            x += 1
+            n += 1
+    return x
